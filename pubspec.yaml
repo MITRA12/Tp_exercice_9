@@ -1,0 +1,8 @@
+name: tp_exercice_9
+version: 0.0.1
+description: An absolute bare-bones web app.
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  boarding: '=0.2.1'
+  browser: any
