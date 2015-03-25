@@ -1,5 +1,7 @@
 part of tp_exercice_9;
 
+// le but du jeu est de bouger la voiture sans qu'elle touche les voitures bleues
+
 class Board extends Surface {
   var blueCars = new MovablePieces(5);
   var myCar = new MovablePiece(1);
@@ -17,8 +19,8 @@ class Board extends Surface {
     
     document.onMouseDown.listen((MouseEvent e) {
       if (big == false) {
-        myCar.width = 100;
-        myCar.height = 40;
+        myCar.width = 80;
+        myCar.height = 60;
         myCar.color = "red";
         big = true;
       }
@@ -43,8 +45,8 @@ class Board extends Surface {
     mp.height = height;
     mp.space = new Size(canvas.width, canvas.height);
     mp.color = color;
-    mp.speed.dx = randomNum(5);
-    mp.speed.dy = randomNum(4);
+    mp.speed.dx = randomNum(6);
+    mp.speed.dy = randomNum(6);
   }
       
   draw() {
